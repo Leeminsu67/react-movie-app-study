@@ -11,7 +11,7 @@ const Movie = ({ id, coverImg, title, genres, summary }) => {
       {/* 페이지 전체가 다시 실행되는것을 막고 싶다. */}
       {/* <h2>{title}</h2> */}
       <h2>
-        <Link to={`react-movie-app-study/movie/${id}`}>{title}</Link>
+        <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>{title}</Link>
       </h2>
       {/* 장르라는 키값에 벨류값이 있는지 확인 */}
       {/* (movie.hasOwnProperty("genres") */}
