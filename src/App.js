@@ -11,11 +11,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/movie">
+        <Route path={`${process.env.PUBLIC_URL}/movie`}>
           {/* <Route index element={<Home />} /> */}
           <Route path=":id" element={<Detail />} />
         </Route>
-        <Route path="/" element={<Home />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
       </Routes>
     </Router>
   );
