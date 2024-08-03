@@ -26,7 +26,7 @@ const Detail = () => {
       ) : (
         <div>
           <div>
-            <Link to={`/`}>전으로 가기</Link>
+            <Link to={`${process.env.PUBLIC_URL}/`}>전으로 가기</Link>
           </div>
 
           <img src={movie.data.movie.medium_cover_image} alt="movie_img" />
