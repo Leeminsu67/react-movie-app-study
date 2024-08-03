@@ -8,12 +8,10 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 
 function App() {
-  const PUBLIC_URL = `${process.env.PUBLIC_URL}/react-movie-app-study`;
-
   return (
     <Router>
       <Routes>
-        <Route path={`${PUBLIC_URL}/movie`}>
+        <Route path={`${process.env.PUBLIC_URL}/movie`}>
           {/* <Route index element={<Home />} /> */}
           <Route path=":id" element={<Detail />} />
         </Route>
