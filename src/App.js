@@ -17,7 +17,7 @@ function App() {
           {/* <Route index element={<Home />} /> */}
           <Route path=":id" element={<Detail />} />
         </Route>
-        <Route path={`${PUBLIC_URL}/`} element={<Home />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
       </Routes>
     </Router>
   );
